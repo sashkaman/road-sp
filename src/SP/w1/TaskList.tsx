@@ -1,5 +1,17 @@
-type DataTaskListPropsType = {
-    data: Task[]
+type TasksType = {
+    taskId: number,
+    title: string,
+    isDone: boolean
+}
+
+type DataType = {
+    title: string,
+    tasks: TasksType[],
+    students: string[],
+}
+
+type TaskListPropsType = {
+    data: DataType;
 }
 
 export const TaskList = (props: TaskListPropsType) => {

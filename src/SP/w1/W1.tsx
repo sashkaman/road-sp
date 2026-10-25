@@ -1,4 +1,4 @@
-import './App.css'
+import { TaskList } from './TaskList';
 
 export const W1 = () => {
     const data1 = {
@@ -117,8 +117,8 @@ export const W1 = () => {
 
     return (
         <div className="App">
-            <W1 data={data1} />
-            <W1 data={data2} />
+            <TaskList data={data1} />
+            <TaskList data={data2} />
         </div>
     );
 }
