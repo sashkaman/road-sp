@@ -1,4 +1,3 @@
-
 import { useState } from "react"
 
 type TaskType = {
@@ -14,7 +13,7 @@ type PropsType = {
     removeTaskAll: () => void
 }
 
-type FilterValuesType = "all" | "active" | "completed";
+type FilterValuesType = "all" | "active" | "completed" | "delete";
 
 export const Todolist = (props: PropsType) => {
 
