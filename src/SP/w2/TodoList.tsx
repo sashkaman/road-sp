@@ -13,7 +13,6 @@ type PropsType = {
     removeTask: (taskId: number) => void
 }
 
-
 export const Todolist = (props: PropsType) => {
 
     type FilterValuesType = "all" | "active" | "completed";
@@ -49,7 +48,6 @@ export const Todolist = (props: PropsType) => {
             }
         </ul>
         <div>
-            {/* 3. Вызываем локальную функцию changeFilter вместо props.changeFilter */}
             <button onClick={() => { changeFilter("all") }}>
                 All
             </button>
