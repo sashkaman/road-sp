@@ -15,16 +15,16 @@ export const W2 = () => {
         setTasks(filteredTasks);
     }
 
-    function removeTaskAll() {
+    function removeAllTasks() {
         setTasks([]);
     }
 
     return (
-        <div className="">
+        <div className="App">
             <Todolist title="What to learn"
                 tasks={tasks}
                 removeTask={removeTask}
-                removeTaskAll={removeTaskAll}
+                removeAllTasks={removeAllTasks}
             />
         </div>
     );
